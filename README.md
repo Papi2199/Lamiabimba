@@ -12,19 +12,16 @@
             min-height: 100vh;
             margin: 0;
             position: relative;
-            overflow: hidden; /* Nasconde l'eventuale overflow del video */
-        }
-        #videoContainer {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+            overflow: hidden;
         }
         iframe {
+            position: fixed;
+            top: 50%;
+            left: 50%;
             width: 100%;
             height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
         }
         #overlay {
             position: fixed;
@@ -53,7 +50,7 @@
             position: relative;
             z-index: 1;
             padding: 20px;
-            border: 2px solid #fff; /* Bordi bianchi */
+            border: none; /* Rimuove il bordo */
             border-radius: 10px;
             background: rgba(0, 0, 0, 0.7);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -85,13 +82,11 @@
     </style>
 </head>
 <body>
-    <div id="videoContainer">
-        <iframe src="https://player.vimeo.com/video/898531197" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
+    <iframe src="https://player.vimeo.com/video/898531197?autoplay=1&loop=1&background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
     <div id="overlay">
         <img id="modal" src="https://i.ibb.co/hc4m71J/gatto-malessere.png" alt="Immagine">
-        <div id="loveMessageModal">𝓠𝓾𝓲 𝓬𝓲 𝓼𝓮𝓲 𝓼𝓸𝓽𝓽𝓸 𝓽𝓾 𝓓𝓪𝓯𝓷𝓮 ❤️</div>
+        <div id="loveMessageModal">𝓠𝓾𝓲 𝓬𝓲 𝓼𝓮𝓲 𝓼𝓸𝓵𝓸 𝓽𝓾 𝓓𝓪𝓯𝓷𝓮 ❤️</div>
     </div>
     <div id="loveMessage" onclick="mostraFoto()">
         ᴀᴘʀɪ ɪʟ ᴍɪᴏ ᴄᴜᴏʀɪᴄɪɴᴏ ❤️
@@ -110,6 +105,7 @@
     </script>
 </body>
 </html>
+
 
 
 
