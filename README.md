@@ -52,7 +52,7 @@
     <div id="initialMessage" onclick="mostraMessaggio()">🐷𝔱𝔬𝔠𝔠𝔞𝔪𝔦🐷</div>
 
     <div id="hiddenMessage">
-        <img src=https://media1.tenor.com/m/B0hY0xt5NUgAAAAC/bust-kurtangle.gif alt="Immagine Grande">
+        <img src=https://media1.tenor.com/m/B0hY0xt5NUgAAAAC/bust-kurtangle.gif
         <p>Dafne davanti al Papi che fa l'elicottero💦</p>
         <div id="closeButton" onclick="chiudiMessaggio()"></div>
     </div>
