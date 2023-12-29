@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,7 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-image: url('https://i.pinimg.com/564x/30/d7/b6/30d7b605c376472aa07d4af33a40afb2.jpg');
+            background-image: url('https://example.com/path/to/high-resolution-image.jpg');
             background-size: cover;
             background-position: center;
             color: red; /* Colore del testo rosso */
@@ -35,5 +36,4 @@
     </script>
 </body>
 </html>
-
 
