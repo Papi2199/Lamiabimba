@@ -10,7 +10,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-image: url('https://i.pinimg.com/564x/60/43/50/60435052d20652348142bd9b5acc0aee.jpg');
+            background-image: url('(https://github.com/Papi2199/Lamiabimba/blob/main/bust-kurtangle.gif)');
             background-size: cover;
             background-position: center;
             color: white;
