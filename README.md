@@ -12,12 +12,16 @@
             min-height: 100vh;
             margin: 0;
             position: relative;
-            background-image: url('https://i.pinimg.com/564x/30/d7/b6/30d7b605c376472aa07d4af33a40afb2.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #fff; /* Testo bianco */
-            font-family: 'Parisienne', cursive; /* Font più stilizzato */
-            text-align: center;
+            overflow: hidden;
+        }
+        iframe {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
         }
         #overlay {
             position: fixed;
@@ -25,32 +29,32 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Sovrimpressione nera con opacità */
+            background-color: rgba(0, 0, 0, 0.7);
             display: none;
-            flex-direction: column; /* Allineamento dei figli in colonna */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 2;
-            overflow: hidden; /* Nasconde i cuori che esplodono oltre i bordi dell'overlay */
+            overflow: hidden;
         }
         #modal {
             max-width: 80%;
             max-height: 80%;
-            animation: hearts 1.5s ease-out; /* Aggiunta animazione cuori */
+            animation: hearts 1.5s ease-out;
         }
         #loveMessage {
             font-size: 2em;
             cursor: pointer;
-            text-decoration: none; /* Rimuovi l'underline */
-            -webkit-tap-highlight-color: transparent; /* Impedisce il colore di evidenziazione durante il tocco su iOS */
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
             position: relative;
             z-index: 1;
             padding: 20px;
-            border: none; /* Rimuove il bordo */
+            border: none;
             border-radius: 10px;
-            background: rgba(0, 0, 0, 0.7); /* Sfondo nero traslucido */
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Ombra */
-            margin-top: 20px; /* Aggiunto margine sopra il messaggio */
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            margin-top: 20px;
         }
         
         #loveMessageModal {
@@ -70,7 +74,6 @@
             }
         }
 
-        /* Stile aggiunto per dispositivi mobili */
         @media only screen and (max-width: 600px) {
             #loveMessage {
                 font-size: 1.5em;
@@ -79,6 +82,8 @@
     </style>
 </head>
 <body>
+    <iframe src="https://player.vimeo.com/video/898531197?autoplay=1&loop=1&background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
     <div id="overlay">
         <img id="modal" src="https://i.ibb.co/hc4m71J/gatto-malessere.png" alt="Immagine">
         <div id="loveMessageModal">𝓠𝓾𝓲 𝓬𝓲 𝓼𝓮𝓲 𝓼𝓸𝓵𝓸 𝓽𝓾 𝓓𝓪𝓯𝓷𝓮 ❤️</div>
@@ -92,7 +97,6 @@
             document.getElementById('overlay').style.display = 'flex';
         }
 
-        // Chiudi la finestra modale cliccando al di fuori dell'immagine
         document.getElementById('overlay').addEventListener('click', function(event) {
             if (event.target === this) {
                 this.style.display = 'none';
@@ -101,4 +105,3 @@
     </script>
 </body>
 </html>
-
