@@ -27,8 +27,8 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 200%;
-            height: 200%;
+            width: 100%;
+            height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             display: none;
             flex-direction: column;
@@ -53,7 +53,6 @@
             border: none; /* Rimuove il bordo */
             border-radius: 10px;
             background: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             margin-top: 20px;
         }
         
