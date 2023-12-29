@@ -52,15 +52,14 @@
             padding: 20px;
             border: none; /* Rimuove il bordo */
             border-radius: 10px;
-            background: rgba(0, 0, 0, 0.7);
             margin-top: 20px;
-        }
-        
+            color: white !important; 
+        }        
         #loveMessageModal {
             font-size: 1.5em;
             margin-top: 10px;
+            color: white !important; 
         }
-
         @keyframes hearts {
             0% {
                 transform: scale(1);
@@ -72,7 +71,6 @@
                 transform: scale(1);
             }
         }
-
         @media only screen and (max-width: 600px) {
             #loveMessage {
                 font-size: 1.5em;
@@ -82,7 +80,6 @@
 </head>
 <body>
     <iframe src="https://player.vimeo.com/video/898531197?autoplay=1&loop=1&background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
     <div id="overlay">
         <img id="modal" src="https://i.ibb.co/hc4m71J/gatto-malessere.png" alt="Immagine">
         <div id="loveMessageModal">𝓠𝓾𝓲 𝓬𝓲 𝓼𝓮𝓲 𝓼𝓸𝓵𝓸 𝓽𝓾 𝓓𝓪𝓯𝓷𝓮 ❤️</div>
@@ -90,12 +87,10 @@
     <div id="loveMessage" onclick="mostraFoto()">
         ᴀᴘʀɪ ɪʟ ᴍɪᴏ ᴄᴜᴏʀɪᴄɪɴᴏ ❤️
     </div>
-
     <script>
         function mostraFoto() {
             document.getElementById('overlay').style.display = 'flex';
         }
-
         document.getElementById('overlay').addEventListener('click', function(event) {
             if (event.target === this) {
                 this.style.display = 'none';
