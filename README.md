@@ -20,7 +20,7 @@
         #loveMessage {
             font-size: 2em;
             cursor: pointer;
-            text-decoration: underline;
+            text-decoration: none; /* Rimuovi l'underline */
         }
     </style>
 </head>
@@ -34,5 +34,6 @@
     </script>
 </body>
 </html>
+
 
 
