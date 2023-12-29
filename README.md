@@ -14,16 +14,17 @@
             position: relative;
             overflow: hidden; /* Nasconde l'eventuale overflow del video */
         }
-        video {
+        #videoContainer {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             z-index: -1;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
         }
         #overlay {
             position: fixed;
@@ -80,18 +81,13 @@
             #loveMessage {
                 font-size: 1.5em;
             }
-            video {
-                width: 100vw;
-                height: 100vh;
-            }
         }
     </style>
 </head>
 <body>
-    <video autoplay muted loop>
-        <source src="https://www.youtube.com/shorts/CuNncwDle-I" type="video/mp4">
-        Il tuo browser non supporta il tag video.
-    </video>
+    <div id="videoContainer">
+        <iframe src="https://player.vimeo.com/video/898531197" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
 
     <div id="overlay">
         <img id="modal" src="https://i.ibb.co/hc4m71J/gatto-malessere.png" alt="Immagine">
