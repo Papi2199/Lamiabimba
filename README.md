@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Espressione d'Amore</title>
     <style>
         body {
@@ -21,6 +21,7 @@
             font-size: 2em;
             cursor: pointer;
             text-decoration: none; /* Rimuovi l'underline */
+            -webkit-tap-highlight-color: transparent; /* Impedisce il colore di evidenziazione durante il tocco su iOS */
         }
     </style>
 </head>
@@ -34,6 +35,5 @@
     </script>
 </body>
 </html>
-
 
 
