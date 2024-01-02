@@ -82,7 +82,7 @@
     <iframe src="https://player.vimeo.com/video/898542498?autoplay=1&loop=1&background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     <div id="overlay">
         <img id="modal" src="https://i.ibb.co/hc4m71J/gatto-malessere.png" alt="Immagine">
-        <div id="loveMessageModal">CE FACI SANDULE, FUMEZI SUB PLOAIE?:))</div>
+        <div id="loveMessageModal">Ciccioooo fai na canna</div>
     </div>
     <div id="loveMessage" onclick="mostraFoto()">
         ᴀᴘʀɪ ɪʟ ᴍɪᴏ ᴄᴜᴏʀɪᴄɪɴᴏ 
